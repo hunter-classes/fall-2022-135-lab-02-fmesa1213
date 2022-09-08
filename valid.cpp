@@ -4,7 +4,7 @@ Course: CSCI-135
 Instructor: Michael Zamansky
 Assignment: Lab 2 A
 
-The program asks the user for an integer between 1 and 100 and then squares that number and returns it.
+The program asks the user for an integer between 0 and 100 and then squares that number and returns it.
 */
 
 #include <iostream>
