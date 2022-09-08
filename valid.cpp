@@ -4,7 +4,7 @@ Course: CSCI-135
 Instructor: Michael Zamansky
 Assignment: Lab 2 A
 
-The program asks the user for an integer between 1 and 100 and then squares that number.
+The program asks the user for an integer between 1 and 100 and then squares that number and returns it.
 */
 
 #include <iostream>
@@ -12,25 +12,26 @@ using namespace std;
 
 int main()
 {
-  
+ int numint; 
+
 cout << "Please enter an integer: "<< endl;
-int num100 = 0;
-cin >> num100;
+cin >> numint;
  
  int numnew = 0;
-   
-		while ((num100 > 0) || (num100 < 100))
+ 
+  while (numint <= 0 || numint >= 100)
+    {
+      cout << "Integer invalid. "<< endl;  
+      
+      cout<< "Please re-enter: "<< endl;
+      cin >> numint;
+    }
+
+		if ((numint > 0) && (numint < 100))
   {
-		numnew = num100*num100;
-      cout << "Number squared is " + numnew + "."<< endl;
+		int numnew = (numint*numint);
+      cout << "Number squared is " << (numnew) << "."<< endl;
 	}
   
-  if (!(num100 > 0) || !(num100 < 100))
-  {
-     cout << "Please re-enter: "<< endl;
-int num100 = 0;
-cin >> num100;
-  }
-return 0;
+  return 0;
 }
-
