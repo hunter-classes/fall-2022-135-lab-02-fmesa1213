@@ -4,8 +4,7 @@ Course: CSCI-135
 Instructor: Micheal Zamansky
 Assignment: Lab 2C
 
-Here, briefly, at least in one or a few sentences
-describe what the program does.
+This code shows an array and lets the user edit it
 */
 
 #include <iostream>
