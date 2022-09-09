@@ -1,9 +1,29 @@
 /*
-Author: your name
-Course: CSCI-136
-Instructor: their name
-Assignment: title, e.g., Lab1A
+Author: Frida Mesa
+Course: CSCI-135
+Instructor: Micheal Zamansky
+Assignment: Lab 2B
 
-Here, briefly, at least in one or a few sentences
-describe what the program does.
+This code does the main lab insturctions. It will asks the user to input two integers L and U, and print out all integers in the range L ≤ i < U 
+separated by spaces. 
 */
+
+#include <iostream>
+#include <funcs.cpp>
+using namespace std;
+
+int main()
+{
+
+cout<<"Enter lower limit ";
+cin>> int l;
+cout<<"Enter Upper limit ";
+cin>> int u;
+
+  for(int i=l;i<u;i++)
+{
+  cout << i << " " << endl ;
+}
+
+return 0;
+}
