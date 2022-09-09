@@ -15,11 +15,6 @@ using namespace std;
 int main()
 {
 
-cout<<"Enter lower limit ";
-cin>> int l;
-cout<<"Enter Upper limit ";
-cin>> int u;
-
   for(int i=l;i<u;i++)
 {
   cout << i << " " << endl ;
