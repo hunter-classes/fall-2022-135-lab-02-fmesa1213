@@ -9,37 +9,36 @@ describe what the program does.
 */
 
 #include <iostream>
+
 using namespace std;
 
-int main()
+int main() 
 {
-double values[10] = { 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 }; 
 
-  for (int i = 0; i < 10 ; i++)
-    {
-     cout << values[i] << " ";
-      }
- 
-  for (int i = 0; i < 10 ; i++){
-  do{
-    
-    cout << "\n Please input index: "<< endl;
-    cin >> values[i];
+  int i, v, myData[10];
+  for(i = 0; i < 10; ++i)
+{
+  myData[i] = 1;
+}
   
-    cout << "Please input new value: "<< endl;
-    cin >> values[i-1];
-      
+do {
+cout << endl;
+for(int i = 0; i < 10; ++i) 
+{
+cout << myData[i] << " ";
+}
 
-    for(int i = 0; i < 10 ; i++)
-      {
-        cout<< values[i]<< " ";
-      }
-    
-  }while (values[10] < 10);
-    }
- 
-    
-    cout<<"Index out of range. Exit."<< endl;
-    
-  return 0;
+cout << endl << endl;
+cout << "Input index: ";
+cin >> i;
+cout << "Input value: ";
+cin >> v;
+
+if(i >= 0 && i < 10)
+{myData[i] = v;}
+
+} while(i >= 0 && i < 10);
+
+  cout << "\nIndex out of range. Exit." << endl;
+return 0;
 }
