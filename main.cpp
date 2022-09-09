@@ -14,8 +14,7 @@ using namespace std;
 
 int main()
 {
-
-  for(int i=l;i<u;i++)
+  for(int i = L; i < U; i++)
 {
   cout << i << " " << endl ;
 }
