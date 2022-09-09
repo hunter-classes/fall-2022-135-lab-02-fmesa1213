@@ -12,9 +12,10 @@ using namespace std;
 
 int main()
 {
-  int L;
-  int U;
   
+  int L = cout <<rand() << endl;
+  int U = cout <<rand() << endl;
+ 
   void print_interval (int L, int U);
   
 return 0;
