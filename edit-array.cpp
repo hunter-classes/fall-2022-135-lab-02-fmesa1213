@@ -8,7 +8,6 @@ This code shows an array and lets the user edit it
 */
 
 #include <iostream>
-
 using namespace std;
 
 int main() 
